@@ -36,7 +36,15 @@ We can conclude that $10^n$ samples would be required for a n-dimension problem.
 
 Let's simulate the above behavior with two points only which lie at 0 and 1 on a single dimension, at a unit length from each other. Suppose we introduce a second axis of "data", again distributed a unit distance away. Now we have two points, (0,0) and (1,1). But the distance between the points has grown to $\sqrt{2}$ according to Euclidean distance $$d(x,y) = \sqrt{(x_1 - y_1)^2 +.....(X_N - y_N)^2}$$
 
-if we add a third dimension, the two points (0, 0, 0) and (1, 1, 1) will be $\sqrt{3}$ away, and so on. By the time we reach 10 dimensions, the two points are now a distance of 3 away from one another: thrice as far as they were when the data was 1-dimensional: 
+if we add a third dimension, the two points $p= (0, 0, 0)$ and $q=(1, 1, 1)$ will be $\sqrt{3}$ away, and so on.  
+
+$$d(p,q) = \sqrt{(p_1 - q_1)^2+(p_2 - q_2)^2+(p_3 - q_3)^2}$$  
+
+$$d(p,q) = \sqrt{(1 - 0)^2 +(1 - 0)^2 +(1 - 0)^2}$$  
+
+$$d(p,q) = \sqrt{3}$$
+
+By the time we reach 9 dimensions, the two points are now a distance of 3 away from one another: thrice as far as they were when the data was 1-dimensional: 
 
 ### Simulate the above scanario and plot the output as a line plot with number of dimensions on x-axis and euclidean distance at Y-axis as shown in the output 
 
